@@ -1,0 +1,22 @@
+Rails 3.1.0 Beta Engine Example - personal playground - DOES NOT WORK WITH Rails 3.0
+Far from finished, but upto now it works nicely.
+
+All functionality is extracted into modules and can get mixed into any object, which makes it easy to
+enhance/reuse existing objects (models were my main requirement, but i thought its a good idea to
+modularize everything from the beginning..
+
+Comes with Rspec and an in-memory sqlite3 database, which is quite speedy (my main application went
+from 9 to under 3 minutes).
+But it doesnt seem to play nice with database_cleaner, as it's still recreating the database after
+each step, even with enabled transactional database cleaning, but right now i dont care, still speedy.
+
+Beware that my targetted use for engines is not 'separation', but 'combination', so this codebase isn't probably
+for everyone, as an isolated_namespace is way easier to handle.
+
+Use/abuse at your own discretion.
+
+Usage is simple, just clone and include:
+gem "imp", :path => "<path_on_your_filesystem>"
+into your rails Gemfile, adjust mount points and run generators (optional).
+
+
