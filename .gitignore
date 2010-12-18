@@ -1,0 +1,10 @@
+.idea
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/**/*
+spec/dummy/db/*.sqlite3
+spec/dummy/tmp
+spec/dummy/log
+spec/dummy/db/migrate
+spec/dummy/spec/models
