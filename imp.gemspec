@@ -9,9 +9,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Christian Pedaschus"]
   s.email       = ["pc@matt-schwarz.com"]
   s.homepage    = "http://www.matt-schwarz.com"
-  s.summary     = %q{Template for integrated Rails 3.1 Engines}
-  s.description = %q{Includes a Rails dummy application to run the engine specs standalone and under a real app}
-
+  s.summary     = %q{Template for integrated Rails 3.1.0-beta Engines}
+  s.description = %q{Includes a Rails dummy application to run the engine specs standalone and under a real app. Also includes RSpec and in-memory sqlite database for faster testing.}
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
@@ -32,9 +31,5 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "database_cleaner" , "~> 0.6"
   s.add_runtime_dependency "factory_girl_rails" #, "~> 2.4"
   s.add_runtime_dependency "capybara", "~> 0.4"
-
-
-  s.add_development_dependency "hirb"
-  s.add_development_dependency "awesome_print"
 
 end

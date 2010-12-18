@@ -14,7 +14,7 @@ task :noop do; end
 
 ## slightly adjusted rake routes task to display the engine routes via dummy rails app
 namespace :rails do
-  desc 'Print out all defined engine routes'
+  desc 'Print out all defined engine routes using dummy rails app as config helper'
   task :routes do
     all_routes = Imp::Engine.routes.routes
     routes = all_routes.collect do |route|

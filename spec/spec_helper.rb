@@ -4,7 +4,6 @@ require "bundler"
 Bundler.setup
 
 require File.expand_path("../dummy/config/environment.rb",  __FILE__)
-#require "rails/test_help"
 require "rspec/rails"
 require 'database_cleaner'
 require 'lib/imp'
@@ -52,10 +51,10 @@ end
 
 
 ####################################################
-## Fix stupid capybara 'looses session' bug Happens
-## because capybara starts a webserver in a
-## background thread which dont has access to the running
-## transactions.
+## Fixes 'loos session' bug.
+## Happens because capybara (and selenium, eventmachine,...)
+## starts a webserver in a background thread which dont
+## has access to the running transactions.
 class ActiveRecord::Base
   mattr_accessor :shared_connection
   @@shared_connection = nil

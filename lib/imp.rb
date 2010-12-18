@@ -1,19 +1,6 @@
 require 'pathname'
 require "active_support/dependencies/autoload"
 
-## seems AS takes care of all this, finally...
-#require 'active_support/core_ext/logger'
-#require 'active_support/core_ext/class/attribute'
-#require 'active_support'
-#require 'action_dispatch'
-#require 'active_record'
-#require 'active_model'
-#require 'arel'
-#require 'abstract_controller'
-#require 'action_controller'
-#require 'action_controller/base'
-#require "action_controller/metal"
-
 module Imp
   extend ActiveSupport::Autoload
 

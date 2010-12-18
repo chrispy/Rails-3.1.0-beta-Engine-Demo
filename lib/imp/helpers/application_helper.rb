@@ -7,7 +7,7 @@ module Imp
       def show_routes
         (Rails::Engine::Railties.engines + [Wc::Application]).map do |app|
           show_route_entries(app)
-        end.join("<br/>".html_safe).html_safe
+        end.join("<br/>").html_safe
       end
 
       ## convenience helper, prints a clickable routing table 

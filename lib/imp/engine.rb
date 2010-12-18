@@ -1,12 +1,6 @@
 require 'imp'
 require 'rails'
 
-require 'rails/railtie'
-#require 'active_support/railtie'
-#require 'active_record/railtie'
-#require 'action_dispatch/railtie'
-#require 'action_controller/railtie'
-
 module Imp
   class Engine < Rails::Engine
     engine_name "imp"
