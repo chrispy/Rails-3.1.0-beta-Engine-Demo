@@ -19,4 +19,4 @@ Usage is simple, just clone and include:
 gem "imp", :path => "<path_on_your_filesystem>"
 into your rails Gemfile, adjust routes and run generators (the latter is optional).
 
-
+The spec/dummy directory was created using Jose Valim's enginex generator, thanks to martinstreicher for bringing up the question.
